@@ -1,0 +1,26 @@
+.detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-item {
+  display: flex;
+  gap: 10px;
+}
+
+.detail-key {
+  color: #666;
+  font-weight: 500;
+  flex-basis: 30%;
+}
+
+.detail-value {
+  color: #333;
+  flex-basis: 70%;
+  line-height: 1.6;
+}
+
+.detail-value p {
+  margin: 8px 0;
+}

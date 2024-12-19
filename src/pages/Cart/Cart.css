@@ -1,0 +1,160 @@
+.shopping-cart {
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-content {
+  width: 70%;
+  margin: 40px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cart-items {
+  border-top: 1px solid #ccc;
+  max-height: 50%;
+  overflow-y: auto;
+}
+
+.item-cart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item-cart:last-child {
+  border-bottom: none;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-info img {
+  min-width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.detail h3 {
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 200px;
+}
+
+.detail p {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 0.9rem;
+}
+
+.product-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-quantity button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.product-quantity input {
+  width: 40px;
+  padding: 10px 0;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+
+.product-price p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.product-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-delete {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-delete:hover {
+  background-color: #e64a19;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.continue-shopping,
+.make-purchase {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.continue-shopping {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.make-purchase {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.cart-footer {
+  width: 70%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .cart-content {
+    width: 80%;
+  }
+
+  .product-info img {
+    min-width: 80px;
+    height: 80px;
+  }
+
+  .detail h3 {
+    width: 150px;
+  }
+}
+
+.addition.disabled {
+  pointer-events: none;
+}
+
+.subtraction.disabled {
+  pointer-events: none;
+}

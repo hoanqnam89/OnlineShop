@@ -1,0 +1,35 @@
+.notification-bar {
+  position: fixed;
+  top: -50px; /* Start above the visible area */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it overlays the page content */
+  transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Default style */
+.notification-default {
+  background-color: #4caf50; /* Green background for success */
+}
+
+/* Error style */
+.notification-error {
+  background-color: #f44336; /* Red background for error */
+}
+
+/* Success style (if needed explicitly) */
+.notification-success {
+  background-color: #4caf50;
+}
+
+.notification-bar.show {
+  top: 10%; /* Final position after sliding down */
+}
+
+.notification-bar.fade-out {
+  opacity: 0;
+}

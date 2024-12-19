@@ -1,0 +1,103 @@
+/* Base styles for options container */
+.options-container {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.options-header {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.options-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.options-header p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Options list styles */
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.options-items {
+  margin: 8px 0;
+}
+
+.options-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.options-link:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mobile styles */
+.options-button {
+  width: 50%;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.options-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown list for mobile */
+.options-list.dropdown {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .options-container {
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+  }
+
+  .options-header {
+    text-align: left;
+  }
+
+  .options-header h2 {
+    font-size: 20px;
+  }
+
+  .options-header p {
+    font-size: 14px;
+  }
+
+  .options-link {
+    font-size: 16px;
+  }
+}
